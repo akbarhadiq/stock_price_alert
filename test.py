@@ -98,13 +98,13 @@ if percentage_difference > 5:
 
         news_list.append(news)
 
-        for x in range(len(news_list)):
-            message = f"TSLA UP/DOWN {percentage_difference}" \
-                      f"{news_list[x]['Headline']} \n" \
-                      f"{news_list[x]['Brief']} \n" \
-                      f"{news_list[x]['Link']}"
+    for x in range(len(news_list)):
+        message = f"TSLA UP/DOWN {percentage_difference}" \
+                  f"{news_list[x]['Headline']} \n" \
+                  f"{news_list[x]['Brief']} \n" \
+                  f"{news_list[x]['Link']}"
 
-            report(message)
+        report(message)
 
 
 else:
